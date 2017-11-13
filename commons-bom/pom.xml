@@ -26,7 +26,7 @@
 
     <groupId>org.forgerock.commons</groupId>
     <artifactId>commons-bom</artifactId>
-    <version>20.0.0</version>
+    <version>20.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Wren Security Common Bill Of Materials</name>
