@@ -56,9 +56,6 @@
   <properties>
     <!-- Maven minimal version -->
     <maven.min.version>3.0.1</maven.min.version>
-
-    <!-- FIXME: Needed for POM-less Google Guice project + others -->
-    <pgpVerifyPluginVersion>1.2.0-SNAPSHOT</pgpVerifyPluginVersion>
   </properties>
 
   <prerequisites>
