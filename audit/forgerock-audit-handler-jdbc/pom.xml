@@ -21,7 +21,7 @@
     <parent>
         <artifactId>forgerock-audit</artifactId>
         <groupId>org.forgerock.commons</groupId>
-        <version>21.0.0-alpha-6</version>
+        <version>21.0.1-alpha-6-SNAPSHOT</version>
     </parent>
 
     <artifactId>forgerock-audit-handler-jdbc</artifactId>
