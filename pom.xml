@@ -21,7 +21,7 @@
      <groupId>org.forgerock.commons</groupId>
      <artifactId>commons-bom</artifactId>
      <relativePath>commons-bom/pom.xml</relativePath>
-     <version>20.1.0</version>
+     <version>20.1.1-SNAPSHOT</version>
   </parent>
 
   <artifactId>commons-parent</artifactId>

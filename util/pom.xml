@@ -19,7 +19,7 @@
     <parent>
         <groupId>org.forgerock.commons</groupId>
         <artifactId>commons-parent</artifactId>
-        <version>20.1.0</version>
+        <version>20.1.1-SNAPSHOT</version>
     </parent>
     <artifactId>forgerock-utilities</artifactId>
     <name>Wren Security Commons Utility Classes - Parent</name>
