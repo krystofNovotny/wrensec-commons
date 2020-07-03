@@ -27,7 +27,7 @@
     <artifactId>http-client-test-utils</artifactId>
 
     <name>Wren Security Commons HTTP - Client Test Utilities</name>
-    <description/>
+    <description />
 
     <dependencies>
         <dependency>

@@ -676,4 +676,8 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+  <scm>
+    <tag>sustaining/22.0.x</tag>
+  </scm>
 </project>

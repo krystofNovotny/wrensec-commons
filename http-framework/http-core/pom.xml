@@ -29,7 +29,7 @@
   <packaging>bundle</packaging>
 
   <name>Wren Security Commons HTTP - Core Library</name>
-  <description/>
+  <description />
 
   <dependencies>
     <dependency>

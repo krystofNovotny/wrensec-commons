@@ -28,7 +28,7 @@
   <packaging>bundle</packaging>
 
   <name>Wren Security Commons HTTP - Grizzly Integration Library</name>
-  <description/>
+  <description />
 
   <dependencies>
     <dependency>
