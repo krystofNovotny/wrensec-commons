@@ -131,7 +131,7 @@ public class JwtSessionModule extends AbstractJwtSessionModule<CookieWrapper> im
             cookies.add(new CookieWrapper(new Cookie()
                     .setName(sessionCookieName)
                     .setValue(value)
-                    .setMaxAge(maxAge)
+                    .setMaxAge(maxAge >= 0 ? maxAge : null)
                     .setPath(path)
                     .setDomain(cookieDomain)
                     .setSecure(isSecure)
