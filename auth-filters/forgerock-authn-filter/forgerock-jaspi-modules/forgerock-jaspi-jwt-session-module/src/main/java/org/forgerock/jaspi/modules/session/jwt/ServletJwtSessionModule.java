@@ -18,7 +18,6 @@ package org.forgerock.jaspi.modules.session.jwt;
 
 import static org.forgerock.caf.http.Cookie.getCookies;
 import static org.forgerock.caf.http.Cookie.newCookie;
-import static org.forgerock.jaspi.modules.session.jwt.AbstractJwtSessionModule.LOGOUT_SESSION_REQUEST_ATTRIBUTE_NAME;
 
 import javax.security.auth.Subject;
 import javax.security.auth.callback.CallbackHandler;
@@ -92,6 +91,7 @@ public class ServletJwtSessionModule extends AbstractJwtSessionModule<Cookie> im
      * @param messageInfo The message info.
      * @return The cookie, or null.
      */
+    @Override
     public Cookie findJwtSessionCookie(MessageInfo messageInfo) {
         HttpServletRequest request = (HttpServletRequest) messageInfo.getRequestMessage();
         Set<Cookie> cookies = getCookies(request);
