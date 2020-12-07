@@ -32,6 +32,7 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertNotEquals;
 import static org.testng.Assert.assertNotNull;
 import static org.testng.Assert.assertNull;
+import static org.testng.Assert.assertTrue;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -39,6 +40,7 @@ import java.net.URLDecoder;
 import java.security.Key;
 import java.util.Arrays;
 import java.util.Calendar;
+import java.util.Collection;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -1295,4 +1297,29 @@ public class ServletJwtSessionModuleTest {
         assertThat(cookieCaptor.getValue().getMaxAge()).isEqualTo(0);
         assertThat(cookieCaptor.getValue().getPath()).isEqualTo("/");
     }
+
+    @Test
+    public void shouldCreateSessionCookieWithMaxAge() {
+        Collection<org.forgerock.caf.http.Cookie> cookies = jwtSessionModule.createCookies("foo", 7, "/");
+        assertEquals(cookies.size(), 1);
+        org.forgerock.caf.http.Cookie cookie = cookies.iterator().next();
+        assertEquals(cookie.getMaxAge(), 7);
+    }
+
+    @Test
+    public void shouldCreateSessionCookieWithoutMaxAge() {
+        Collection<org.forgerock.caf.http.Cookie> cookies = jwtSessionModule.createCookies("foo", -1, "/");
+        assertEquals(cookies.size(), 1);
+        org.forgerock.caf.http.Cookie cookie = cookies.iterator().next();
+        assertTrue(cookie.getMaxAge() < 0);
+    }
+
+    @Test
+    public void shouldCreateSessionExpiredCookie() {
+        Collection<org.forgerock.caf.http.Cookie> cookies = jwtSessionModule.createCookies("foo", 0, "/");
+        assertEquals(cookies.size(), 1);
+        org.forgerock.caf.http.Cookie cookie = cookies.iterator().next();
+        assertTrue(cookie.getMaxAge() == 0);
+    }
+
 }
