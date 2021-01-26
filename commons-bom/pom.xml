@@ -42,7 +42,7 @@
         <!-- Third party components versions -->
         <i18nFrameworkVersion>1.4.3</i18nFrameworkVersion>
         <jodaTime.version>2.10.9</jodaTime.version>
-        <assertj.version>3.11.1</assertj.version>
+        <assertj.version>3.19.0</assertj.version>
         <forgerock-guava.version>18.0.4</forgerock-guava.version>
         <jackson.version>2.9.7</jackson.version>
         <jaxb.version>2.3.1</jaxb.version>
