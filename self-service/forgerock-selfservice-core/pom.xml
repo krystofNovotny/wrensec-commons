@@ -39,6 +39,12 @@
         </dependency>
 
         <dependency>
+          <groupId>org.apache.servicemix.bundles</groupId>
+          <artifactId>org.apache.servicemix.bundles.jaxb-impl</artifactId>
+          <version>2.2.11_1</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.apache.servicemix.bundles</groupId>
             <artifactId>org.apache.servicemix.bundles.javax-inject</artifactId>
         </dependency>
