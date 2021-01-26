@@ -45,6 +45,7 @@
     <module>http-client-apache-async</module>
     <module>http-examples</module>
     <module>binding-test-utils</module>
+    <module>http-benchmarks</module>
     <module>http-oauth2</module>
     <module>http-client-test-utils</module>
   </modules>
@@ -78,10 +79,17 @@
 
   <dependencyManagement>
     <dependencies>
+
+      <dependency>
+        <groupId>org.codehaus.groovy</groupId>
+        <artifactId>groovy-jsr223</artifactId>
+        <version>3.0.7</version>
+      </dependency>
+
       <dependency>
         <groupId>com.xebialabs.restito</groupId>
         <artifactId>restito</artifactId>
-        <version>0.8.2</version>
+        <version>0.9.4</version>
       </dependency>
 
       <dependency>

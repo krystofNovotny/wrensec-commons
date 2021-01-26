@@ -22,6 +22,7 @@
         <artifactId>forgerock-selfservice</artifactId>
         <groupId>org.forgerock.commons</groupId>
         <version>22.1.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <artifactId>forgerock-selfservice-core</artifactId>
@@ -36,6 +37,11 @@
         <dependency>
             <groupId>org.forgerock.commons</groupId>
             <artifactId>json-resource</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-osgi</artifactId>
         </dependency>
 
         <dependency>

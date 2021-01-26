@@ -22,6 +22,7 @@
         <groupId>org.forgerock.commons</groupId>
         <artifactId>commons-parent</artifactId>
         <version>22.1.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <artifactId>forgerock-rest</artifactId>
@@ -48,9 +49,8 @@
     <dependencies>
 
         <dependency>
-             <groupId>javax.xml.bind</groupId>
-             <artifactId>jaxb-api</artifactId>
-             <version>${jaxb.version}</version>
+            <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-osgi</artifactId>
         </dependency>
 
         <dependency>
@@ -77,8 +77,9 @@
             <dependency>
                 <groupId>com.sun.mail</groupId>
                 <artifactId>javax.mail</artifactId>
-                <version>1.5.1</version>
+                <version>1.6.2</version>
             </dependency>
+
         </dependencies>
     </dependencyManagement>
 
