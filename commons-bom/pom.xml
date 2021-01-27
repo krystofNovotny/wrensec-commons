@@ -53,7 +53,7 @@
         <testng.version>7.3.0</testng.version>
         <swagger.version>1.6.2</swagger.version>
         <apache-httpcore.version>4.4.14</apache-httpcore.version>
-        <apache-httpclient.version>4.5.2</apache-httpclient.version>
+        <apache-httpclient.version>4.5.13</apache-httpclient.version>
         <apache-httpasyncclient.version>4.1.2</apache-httpasyncclient.version>
         <jsr305.version>3.0.2</jsr305.version>
     </properties>
