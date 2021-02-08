@@ -76,9 +76,9 @@
         </dependency>
 
         <dependency>
-              <groupId>jakarta.activation</groupId>
-              <artifactId>jakarta.activation-api</artifactId>
-            </dependency>
+            <groupId>jakarta.activation</groupId>
+            <artifactId>jakarta.activation-api</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>org.assertj</groupId>
